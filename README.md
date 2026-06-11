@@ -1,38 +1,53 @@
-## Getting started
+# Travel Planner
 
-`cd` into your new folder and run:
-- `npm install`
+A travel planner web app built as the capstone project for the Udacity Front End Web Developer Nanodegree.
 
-To start the app run:
+Enter a destination and a travel date, and the app shows:
 
-- `npm run build-prod`
-- `npm run start`
+- A countdown of how many days until your trip
+- A trip summary (city, country, departure date)
+- The weather forecast for your destination
+- A representative photo of the destination
 
-For Development mode run:
+It combines several external APIs:
 
-- `npm run build-dev`
+- **Geonames** – looks up coordinates for the destination
+- **Dark Sky** – fetches the weather forecast (proxied through the Express server)
+- **Pixabay** – pulls a photo of the destination (falls back to a country photo for rural locations)
 
-For Tests:
+## Tech Stack
 
-- `npm run test`
+- JavaScript (ES6) bundled with Webpack
+- Sass for styling
+- Express + Node.js backend
+- Jest for testing
+- Service Worker for offline support
 
-Extra Functionality:
+## Getting Started
 
-- `pictures for rural locations`
+Install dependencies:
 
-## Dependencies
+```bash
+npm install
+```
 
+Build and run the app:
 
-- `babel`
-- `body-parser`
-- `cors`
-- `express`
-- `mini-css-extract-plugin`
-- `node-fetch": "^2.6.0"`
-- `optimize-css-assets-webpack-plugin`
-- `supertest`
-- `terser-webpack-plugin`
-- `transform-runtime`
-- `webpack`
-- `webpack-cli`
-- `workbox-webpack-plugin`
+```bash
+npm run build-prod
+npm run start
+```
+
+The app runs on `http://localhost:1015/`.
+
+For development mode:
+
+```bash
+npm run build-dev
+```
+
+To run the tests:
+
+```bash
+npm run test
+```

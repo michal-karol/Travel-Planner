@@ -1,5 +1,5 @@
 {
-  "name": "final-project",
+  "name": "travel-planner",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,10 +8,15 @@
     "build-prod": "webpack --config webpack.prod.js",
     "build-dev": "webpack-dev-server  --config webpack.dev.js --open"
   },
-  "keywords": [],
-  "author": "slots",
+  "keywords": [
+    "travel",
+    "weather",
+    "webpack",
+    "express"
+  ],
+  "author": "Michal Slotwinski",
   "license": "ISC",
-  "description": "",
+  "description": "A travel planner web app that shows the weather forecast and a destination photo for an upcoming trip.",
   "dependencies": {
     "@babel/runtime": "^7.8.3",
     "body-parser": "^1.19.0",
